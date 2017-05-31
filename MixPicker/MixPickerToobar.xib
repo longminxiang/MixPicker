@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MixPickerToobar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aO-Yr-jX8">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="3dB-fw-izs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d5-cp-xhX">
+                    <rect key="frame" x="250" y="0.0" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="TA3-hA-a7O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.85882352939999995" green="0.72156862749999995" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0d5-cp-xhX" secondAttribute="bottom" id="EFQ-bJ-YR1"/>
+                <constraint firstAttribute="bottom" secondItem="5aO-Yr-jX8" secondAttribute="bottom" id="Lzu-mS-aR2"/>
+                <constraint firstItem="5aO-Yr-jX8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PEv-T9-FLN"/>
+                <constraint firstItem="5aO-Yr-jX8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eXE-xf-zej"/>
+                <constraint firstItem="0d5-cp-xhX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ihd-uq-tZe"/>
+                <constraint firstAttribute="trailing" secondItem="0d5-cp-xhX" secondAttribute="trailing" id="vP8-Lo-Ddp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="5aO-Yr-jX8" id="jUJ-5v-j9c"/>
+                <outlet property="doneButton" destination="0d5-cp-xhX" id="B1D-0g-Axd"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="-117"/>
+        </view>
+    </objects>
+</document>
